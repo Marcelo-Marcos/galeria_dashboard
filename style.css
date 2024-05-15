@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+:root {
+  --cor-fundo: #35374B;
+  --cor-cabecalho: #000000;
+  --cor-fonte: #dbd8d8;
+  --cor-borda: #D24545;
+  --cor-animacao: #00ff2a;
+  --tipo-fonte-projeto: "Anta", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-fundo);
+  color: var(--cor-fonte);
+}
+
+.cabecalho {
+  background-color: var(--cor-cabecalho);
+  padding: 3%;
+}
+
+.cabecalho__navegar__link {
+  padding: 5%;
+  text-decoration: none;
+  font-family: var(--tipo-fonte-projeto);
+  font-size: 30px;
+  color: var(--cor-fonte);
+}
+
+.cabecalho__navegar__link:hover {
+  color: var(--cor-animacao);
+  text-decoration: underline;
+  transition: 1s;
+}
+
+/*index*/
+.principal__container {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 10% 10% 10%;
+  gap: 50px;
+}
+
+.principal__container__titulo {
+  font-family: var(--tipo-fonte-projeto);
+  font-size: 100px;
+  text-align: center;
+  padding: 5%;
+}
+
+.principal__container_qualidade {
+  font-family: var(--tipo-fonte-projeto);
+  font-size: 25px;
+  color: var(--cor-fonte);
+  text-align: center;
+}
+
+.principal__container__video {
+  height: 550px;
+  width: 1000px;
+}
+
+.principal__container__video:hover {
+  height: 570px;
+  width: 1020px;
+}
+
+/*loja*/
+.principal__galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10% 4%;
+  gap: 100px;
+}
+
+.principal__galeria__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #222831;
+  gap: 25px;
+  padding-bottom: 5%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 3px solid var(--cor-borda);
+  transition: 0.3s;
+}
+
+.principal__galeria__container:hover {
+  border: 5px solid var(--cor-borda);
+}
+
+.principal__galeria__conteiner__loja {
+  height: 320px;
+  width: 560px;
+  border-radius: 5% 5% 0 0;
+  border-bottom: 3px solid var(--cor-borda);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 2%;
+  list-style-type: none;
+  font-family: var(--tipo-fonte-projeto);
+  font-size: 20px;
+}
+
+.rodape {
+  background-color: var(--cor-cabecalho);
+  padding: 3%;
+  font-family: var(--tipo-fonte-projeto);
+  font-size: 30px;
+  color: var(--cor-fonte);
+}
+
+/*sobre mim*/
+.principal__container__titulo__sobre {
+  font-family: var(--tipo-fonte-projeto);
+  font-size: 25px;
+  text-align: justify;
+}
+
+.principal__container__apresentacao {
+  text-align: justify;
+  font-size: 20px;
+  font-family: var(--tipo-fonte-projeto);
+}
