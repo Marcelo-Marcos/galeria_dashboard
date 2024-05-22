@@ -6,6 +6,10 @@
   --cor-fonte: #dbd8d8;
   --cor-borda: #D24545;
   --cor-animacao: #00ff2a;
+  --tamanho-fonte-cabecalho-rodape: 1.875em;
+  --tamanho-fonte-titulo: 6.25em;
+  --tamanho-fonte-principal: 1.5em;
+  --espaco-inferior-video: 5%;
   --tipo-fonte-projeto: "Anta", sans-serif;
 }
 
@@ -24,7 +28,7 @@ body {
   padding: 5%;
   text-decoration: none;
   font-family: var(--tipo-fonte-projeto);
-  font-size: 30px;
+  font-size: var(--tamanho-fonte-cabecalho-rodape);
   color: var(--cor-fonte);
 }
 
@@ -39,46 +43,50 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3% 10% 10% 10%;
-  gap: 50px;
 }
 
 .principal__container__titulo {
   font-family: var(--tipo-fonte-projeto);
-  font-size: 100px;
+  font-size: var(--tamanho-fonte-titulo);
   text-align: center;
-  padding: 5%;
+  padding: 3%;
 }
 
 .principal__container_qualidade {
   font-family: var(--tipo-fonte-projeto);
-  font-size: 25px;
+  font-size: var(--tamanho-fonte-principal);
   color: var(--cor-fonte);
   text-align: center;
+  margin-bottom: var(--espaco-inferior-video);
 }
 
 .principal__container__video {
-  height: 550px;
-  width: 1000px;
+  width: 90%;
+  margin-bottom: var(--espaco-inferior-video);
 }
 
 .principal__container__video:hover {
-  height: 570px;
-  width: 1020px;
+  width: 91%;
+  margin-bottom: var(--espaco-inferior-video);
 }
 
 /*loja*/
 .principal__galeria {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10% 4%;
-  gap: 100px;
+  padding: 7% 2%;
+  gap: 50px;
 }
 
 .principal__galeria__container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #222831;
+  width: 40%;
   gap: 25px;
   padding-bottom: 5%;
   box-sizing: border-box;
@@ -92,8 +100,7 @@ body {
 }
 
 .principal__galeria__conteiner__loja {
-  height: 320px;
-  width: 560px;
+  width: 100%;
   border-radius: 5% 5% 0 0;
   border-bottom: 3px solid var(--cor-borda);
 }
@@ -112,7 +119,7 @@ ul {
   background-color: var(--cor-cabecalho);
   padding: 3%;
   font-family: var(--tipo-fonte-projeto);
-  font-size: 30px;
+  font-size: var(--tamanho-fonte-cabecalho-rodape);
   color: var(--cor-fonte);
 }
 
@@ -127,4 +134,23 @@ ul {
   text-align: justify;
   font-size: 20px;
   font-family: var(--tipo-fonte-projeto);
+}
+
+@media (max-width: 600px) {
+  .cabecalho__navegar__link {
+    font-size: 1em;
+  }
+
+  .principal__container__titulo {
+    font-size: 2.5em;
+  }
+
+  .principal__galeria__container {
+    gap: 0;
+    padding-bottom: 2%;
+  }
+
+  ul {
+    font-size: 0.8em;
+  }
 }
