@@ -1,6 +1,6 @@
 # Galeria de dashboards: Olá bem vindo ao meu projeto.
 
-![image](https://www.flickr.com/photos/200691548@N03/53742821514)
+![image](https://flic.kr/p/2pT51sW)
 
 
 ## Ferramentas utilizadas:
